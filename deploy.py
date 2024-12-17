@@ -4,7 +4,7 @@ import os
 import re
 
 # Load your trained model
-model_path = 'C:\\Users\\siddh\\Downloads\\Spam Email Detection\\Spam Email Detection\\model.pkl'
+model_path = 'model.pkl'
 if os.path.exists(model_path):
     model = joblib.load(model_path)
 else:
@@ -12,7 +12,7 @@ else:
     st.stop()
 
 # Load your vectorizer
-vectorizer_path = 'C:\\Users\\siddh\\Downloads\\Spam Email Detection\\Spam Email Detection\\vectorizer.pkl'
+vectorizer_path = 'vectorizer.pkl'
 if os.path.exists(vectorizer_path):
     vectorizer = joblib.load(vectorizer_path)
 else:
